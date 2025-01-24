@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  transition: background-image 0.5s; /* 背景画像の変更にアニメーションを追加 */
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8); /* 背景を少し透過させる */
+  border-radius: 8px; /* 角を丸くする */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 影をつける */
+}
+
+input[type="file"] {
+  width: 100%; /* 幅を100%に設定 */
+  padding: 10px; /* 内側の余白 */
+  margin-bottom: 10px; /* 下の余白 */
+}
+
+input[type="text"] {
+  width: 100%; /* 幅を100%に設定 */
+  padding: 10px; /* 内側の余白 */
+  margin-bottom: 10px; /* 下の余白 */
+  border: 1px solid #ddd; /* 枠線 */
+  border-radius: 4px; /* 角を丸くする */
+}
+
+button {
+  padding: 10px 15px; /* 内側の余白 */
+  background-color: #007bff; /* ボタンの背景色 */
+  color: white; /* ボタンの文字色 */
+  border: none; /* 枠線なし */
+  border-radius: 4px; /* 角を丸くする */
+  cursor: pointer; /* カーソルをポインタに */
+}
+
+button:hover {
+  background-color: #0056b3; /* ホバー時の背景色 */
+}
+
+.header {
+  display: flex; /* フレックスボックスを使用 */
+  justify-content: space-between; /* 左右に配置 */
+  align-items: center; /* 縦方向の中央揃え */
+}
+
+.days {
+  display: grid; /* グリッドレイアウトを使用 */
+  grid-template-columns: repeat(7, 1fr); /* 7列のグリッド */
+  margin-top: 10px; /* 上の余白 */
+}
+
+.days div {
+  padding: 10px; /* 内側の余白 */
+  border: 1px solid #ddd; /* 枠線 */
+  text-align: center; /* 中央揃え */
+  cursor: pointer; /* カーソルをポインタに */
+  transition: background-color 0.3s; /* 背景色の変化にアニメーションを追加 */
+}
+
+.days div:hover {
+  background-color: #e0e0e0; /* ホバー時の背景色 */
+}
+
+.eventList {
+  margin-top: 20px; /* 上の余白 */
+  padding: 10px; /* 内側の余白 */
+  border: 1px solid #ddd; /* 枠線 */
+  background: rgba(255, 255, 255, 0.9); /* 背景を少し透過させる */
+  border-radius: 5px; /* 角を丸くする */
+}
